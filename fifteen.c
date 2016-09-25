@@ -16,10 +16,10 @@
  
 #define _XOPEN_SOURCE 500
 
-#include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 // constants
 #define DIM_MIN 3
@@ -39,7 +39,7 @@ void draw(int d);
 bool move(int tile , int d);
 bool won(int d);
 
-int main(int argc, string argv[])
+int main(int argc, char* argv[])
 {
     // ensure proper usage
     if (argc != 2)
@@ -103,7 +103,8 @@ int main(int argc, string argv[])
 
         // prompt for move
         printf("Tile to move: ");
-        int tile = GetInt();
+        int tile ;
+        scanf("%i",&tile);
         
         // quit if user inputs 0 (for testing)
         if (tile == 0)
