@@ -1,2 +1,0 @@
-Since I was doing the course CS50 online we had to make this game as a pset and although we were provided with the structure
-main() no other function was implemented . So I do not take full credit for it .
