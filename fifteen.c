@@ -10,8 +10,6 @@
  * whereby the board's dimensions are to be d x d,
  * where d must be in [DIM_MIN,DIM_MAX]
  *
- * Note that usleep is obsolete, but it offers more granularity than
- * sleep and is simpler to use than nanosleep; `man usleep` for more.
  */
  
 #define _XOPEN_SOURCE 500
